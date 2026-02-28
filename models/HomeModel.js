@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const HomeSchema = new mongoose.Schema({
-    titulo: {type: String, requied: true},
+    titulo: {type: String, required: true},
     descricao: String
 })
 
