@@ -28,9 +28,9 @@ const sessionOptions = session({
     resave: false,
     saveUninitialized: false,
     cookie: {maxAge: 1000 * 60 * 60 *24 * 7, httpOnly: true}
-}); 
+});  
 app.use(sessionOptions);
-app.use(csrf())
+app.use(csrf()) 
 
 //Meus Middlewares
 app.use(middlewareGlobal);
@@ -40,7 +40,7 @@ app.use(csrfMiddleware)
 
 app.set('views',path.resolve(__dirname, 'src', 'views'));
 app.set('view engine', 'ejs')
-app.use(routes);
+app.use(routes); 
 
 
 app.on('pronto', () =>
